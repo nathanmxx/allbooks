@@ -2,6 +2,8 @@
 
 # AluraBooks
 
+Boas vindas a API do allbooks
+
 O AluraBooks é uma loja virtual que vende livros da Casa do Código. 
 É um MVP que tá só começando e ainda tem muitas funcionalidades novas para serem desenvolvidas.
 
