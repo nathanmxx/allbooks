@@ -360,6 +360,6 @@ server.use(router)
 
 server.listen(8000, () => {
 
-  console.log("acesse essa API em http://localhost:8000")
+  console.log("API disponivel em http://localhost:8000")
 
 })
