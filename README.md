@@ -50,3 +50,24 @@ senhas são guardadas em texto puro, então ela não serve para uso real.
 
 O token é um JWT com validade de 12 horas. Qualquer rota fora das públicas
 responde 401 quando ele falta ou é inválido.
+
+## Como está organizado
+
+    api-alurabooks/
+      server.js        rotas de cadastro e login, e a checagem do token
+      database.json    livros, autores, categorias e pedidos
+      usuarios.json    usuários cadastrados
+    curso-react-alurabooks/
+      src/
+        http/          instância do axios e o interceptor do token
+        rotas/         rotas do site
+        paginas/       página inicial, minha conta e pedidos
+        componentes/   barra de navegação, modais de cadastro e login, banner
+        interfaces/    tipos de livro e de pedido
+
+## Tecnologias
+
+React 18, TypeScript, React Router 6 e axios no site. Os botões, campos e
+modais vêm da `ds-alurabooks`, a biblioteca de componentes da própria formação.
+
+Na API, json-server e jsonwebtoken.
