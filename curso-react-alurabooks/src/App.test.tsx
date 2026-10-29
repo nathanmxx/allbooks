@@ -24,3 +24,11 @@ test('com token salvo, a barra deixa de oferecer o login', () => {
   render(<App />);
   expect(screen.queryByText('Login')).not.toBeInTheDocument();
 });
+
+test('o menu de Minha conta aponta para as rotas da area do usuario', () => {
+  sessionStorage.setItem('token', 'qualquer');
+  window.history.pushState({}, '', '/minha-conta');
+  render(<App />);
+  expect(screen.getByText('Pedidos').closest('a')).toHaveAttribute('href', '/minha-conta/pedidos');
+  window.history.pushState({}, '', '/');
+});

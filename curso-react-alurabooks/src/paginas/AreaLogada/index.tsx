@@ -9,16 +9,16 @@ const AreaLogada = () => {
             <div className="menu">
                 <ul className="navegacao">
                     <li>
-                        <Link to="/area-logada/pedidos">Pedidos</Link>
+                        <Link to="/minha-conta/pedidos">Pedidos</Link>
                     </li>
                     <li>
-                        <Link to="/area-logada/trocas">Trocas</Link>
+                        <Link to="/minha-conta/trocas">Trocas</Link>
                     </li>
                     <li>
-                        <Link to="/area-logada/cupons">Cupons</Link>
+                        <Link to="/minha-conta/cupons">Cupons</Link>
                     </li>
                     <li>
-                        <Link to="/area-logada/dados">Seus dados</Link>
+                        <Link to="/minha-conta/dados">Seus dados</Link>
                     </li>
                 </ul>
             </div>
